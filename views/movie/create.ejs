@@ -1,0 +1,10 @@
+<form action="/movie" method="post">
+  <input name="title" type="text" placeholder="movie title" />
+  <input name="length" type="number" placeholder="length" />
+  <select name="actors" multiple>
+    <% actors.forEach((actor) => { %>
+    <option value="<%= actor.id %>"><%= actor.name %></option>
+    <% }) %>
+  </select>
+  <button type="submit">submit</button>
+</form>

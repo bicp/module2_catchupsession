@@ -1,0 +1,9 @@
+<h2><%= movie.title %></h2>
+<ul>
+  <% movie.actors.forEach((actor) => { %>
+  <li>
+    <h2><%= actor.name %></h2>
+    <h3><%= actor.age %></h3>
+  </li>
+  <% }) %>
+</ul>
